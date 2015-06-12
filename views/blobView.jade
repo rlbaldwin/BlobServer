@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    h1= title
+
+    #results
+    table
+        thead
+           tr: th Patient 'A' Ultrasound Files
+        tbody
+            for result in results
+                  for subresult in result
+                     tr
+                        td
+                           a(href='#{url}/#{subresult.name}') #{subresult.name}
+                        td
+                           ul
+                             - each value, name in subresult.properties
+                                if value
+                                   li= name + ":" + value
+
+            

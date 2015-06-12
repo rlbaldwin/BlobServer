@@ -1,0 +1,12 @@
+var jade = require('jade');
+var gulpJade = require('gulp-jade');
+var gulp = require('gulp);
+
+gulp.task('json-test', function() {
+  return gulp.src('./test1.jade')
+    .pipe(data(function(file) {
+      return require('./myData.json');
+    }))
+    .pipe(jade())
+    .pipe(gulp.dest('build'));
+});
