@@ -1,4 +1,0 @@
-Incorrect number of arguments
-Express server listening on port \\.\pipe\d173ffa4-4258-4996-8415-9592a7fb13a6
-[90mGET / [32m200 [90m250ms - 170b[0m
-[90mGET / [32m200 [90m11ms - 170b[0m

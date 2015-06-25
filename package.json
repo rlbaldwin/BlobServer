@@ -19,6 +19,7 @@
     "azure-storage": "^0.4.4",
     "azure-table-node": "^1.4.1",
     "express": "^3.1.2",
+    "gaze": "^0.5.1",
     "gulp": "^3.8.11",
     "gulp-data": "^1.2.0",
     "gulp-jade": "^1.0.1",

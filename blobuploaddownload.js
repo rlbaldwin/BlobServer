@@ -107,7 +107,7 @@ BlobProvider = function () {
     //  This will be done on an andjustable cadence with
     //  a default preset to 60 seconds
     //
-    this.recordAudio = function recordAudio(container, cb) {
+/*    this.recordAudio = function recordAudio(container, cb) {
         container = container;
 
         this.createBlobService();
@@ -120,7 +120,7 @@ BlobProvider = function () {
         sourceDirectoryPath = path.join(sourceDirectoryPath, 'pulse.wav');
         this.createBlockBlobFromLocalfile(sourceDirectoryPath, container);
     }
-
+*/
     this.uploadSample = function uploadSample() {
         // Sample 1 : Demonstrates how to upload all files from a given directoy
         uploadBlobs(processArguments[2], container, function () {
@@ -138,8 +138,12 @@ BlobProvider = function () {
     ////////////////////////////////////////////////////
     //  Uploading a blob
     //
-    this.createBlockBlobFromLocalfile = function createBlockBlobFromLocalfile(sourceDirectoryPath, container) {
+    this.createBlockBlobFromLocalfile = function createBlockBlobFromLocalfile(container, sourceDirectoryPath) {
         var fileNameTime = time();
+        var blobService = azure.createBlobService(
+            AZURE_STORAGE_ACCOUNT = 'biomed',
+            AZURE_STORAGE_ACCESS_KEY = 'sB8G27x+fJ+UO5GPJNc9ztOawInooN2KV0QTs5YqQCzJDJQ/lHNx3+MuQCx/fQXNNCcUGIV3+5rBRxe35rstJg=='
+        );
 
         // Step 0 : validate directory is valid.
         if (!fs.existsSync(sourceDirectoryPath)) {

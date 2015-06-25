@@ -1,7 +1,0 @@
-clientProc = undefined
-clientProc = false
-Incorrect number of arguments
-Found serverSocketMgr
-Express server listening on port \\.\pipe\68af0dcf-5152-4c06-9d12-8e3438c0e9dc
-[90mGET / [32m200 [90m200ms - 170b[0m
-[90mGET / [32m200 [90m9ms - 170b[0m

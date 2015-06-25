@@ -1,5 +1,0 @@
-Trying to connect to server ...
-Incorrect number of arguments
-Express server listening on port \\.\pipe\b50e003e-7c79-409a-a38b-c2845ac7b10c
-[90mGET / [32m200 [90m256ms - 170b[0m
-[90mGET / [32m200 [90m10ms - 170b[0m

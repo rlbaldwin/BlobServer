@@ -1,0 +1,7 @@
+clientProc = undefined
+clientProc = false
+Incorrect number of arguments
+Express server listening on port \\.\pipe\a0ff5e8a-3e68-47da-a496-4caf301172d9
+Found serverSocketMgr
+[90mGET / [32m200 [90m52ms - 170b[0m
+[90mGET / [32m200 [90m9ms - 170b[0m

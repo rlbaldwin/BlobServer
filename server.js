@@ -9,8 +9,10 @@ var express = require('express')
   , path = require('path');
 
 var app = express();
+var clientProc;
 
-var clientProc = process.env.CLIENT;
+
+exports.clientProc = process.env.CLIENT;
 console.log('clientProc = ' + clientProc);
 
 if(!clientProc || '') { clientProc = 'false'};
@@ -39,11 +41,13 @@ app.configure('development', function(){
 app.get('/', routes.index);
 //app.get('/users', user.list);
 
-exports.sensorServer = http.createServer(app).listen(app.get('port'), function(){
+//exports.sensorServer = http.createServer(app).listen(app.get('port'), function(){
+/////    var sensorServer = app.listen(app.get('port'), function(){
 //var sensorServer = (app).listen(app.get('port'), function () {
-    console.log("Express server listening on port " + app.get('port'));
-});
+//    console.log("Express server listening on port " + app.get('port'));
+//});
 
+//var io = require('socket.io').listen(sensorServer, {log: false});
 
 var BlobManager = require('./blobManager').BlobManager;
 var blobManagerService = new BlobManager(app);
@@ -61,6 +65,7 @@ if(clientProc == 'true') {
     }
     catch (err) {
         console.log('Unable to locate clientSocketMgr');
+        console.log('If this environment supports the client, then run command "export CLIENT=true"');
         console.log(err);
     }
 }
@@ -70,10 +75,10 @@ else {
         var SocketManager = require('./serverSocketMgr').SocketManager;
         var socketManagerService = new SocketManager(app);
         console.log('Found serverSocketMgr');
+        console.log("Express server listening on port " + app.get('port'));
     }
     catch (err) {
         console.log('Unable to locate any SocketMgrs');
         console.log(err);
     }
 }
-
