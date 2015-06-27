@@ -1,0 +1,11 @@
+clientProc = undefined
+clientProc = false
+Incorrect number of arguments
+Found serverSocketMgr
+Express server listening on port \\.\pipe\e23d0916-c8e1-432b-a040-7db16238ba78
+[90mGET / [32m200 [90m122ms - 170b[0m
+[90mGET / [32m200 [90m11ms - 170b[0m
+[90mGET / [32m200 [90m16ms - 170b[0m
+blobuploaddownload: container: webcontent
+[]
+[90mGET /blobs [32m200 [90m276ms - 260b[0m

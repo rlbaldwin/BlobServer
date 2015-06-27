@@ -16,7 +16,7 @@ SocketManager = function (app) {
     /////////////////////////////////////////////////////////////
     // Below represents the client conversation to the webserver
     //
-    if(development=true) {
+    if(development==true) {
         var webSocket = client.connect('http://192.168.3.106:3000', { 'force new connection': true });
         console.log('development=true');
     } else {

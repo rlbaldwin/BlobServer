@@ -29,15 +29,14 @@ watch.createMonitor('.', function (monitor) {
             blobProvider.createBlockBlobFromLocalfile(container, filepath, function (cb) {
                 console.log('watchAndUpload: uploading ' + filepath + ' to ' + container);
                 if (error) {
-                    console.log('Error: ' + error);
-                } else {
-                    setTimeout(function() {
-                        fs.unlink(filepath, function (err) {
-                            if (err) console.log('Deleting the local file failed');
-                            console.log('successfully deleted ' + filepath);
-                        });
-                    }, 4000);
+                    console.log(error);
                 }
+                setTimeout(function() {
+                    fs.unlink(filepath, function (err) {
+                        if (err) console.log('Deleting the local file failed');
+                        console.log('successfully deleted ' + filepath);
+                    });
+                }, 4000);
             });
         }, 30000);
 

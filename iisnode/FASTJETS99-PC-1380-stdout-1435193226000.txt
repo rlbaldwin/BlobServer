@@ -1,0 +1,64 @@
+clientProc = undefined
+clientProc = false
+Incorrect number of arguments
+Found serverSocketMgr
+Express server listening on port \\.\pipe\a8a9086c-bca6-45b5-9747-508a0f8c8126
+[90mGET / [32m200 [90m41ms - 170b[0m
+blobuploaddownload: container: webcontent
+[ { name: '2015-06-24_21:33:41:413.mp3',
+    properties: 
+     { 'last-modified': 'Wed, 24 Jun 2015 21:35:37 GMT',
+       etag: '0x8D27CDCD83C98AB',
+       'content-length': '2880044',
+       'content-type': 'audio/x-wav',
+       'content-encoding': '',
+       'content-language': '',
+       'content-md5': 'POBTl1AYzEOTaMsE5Grtfg==',
+       'cache-control': '',
+       'content-disposition': '',
+       blobtype: 'BlockBlob',
+       leasestatus: 'unlocked',
+       leasestate: 'available' } },
+  { name: '2015-06-24_21:34:11:606.mp3',
+    properties: 
+     { 'last-modified': 'Wed, 24 Jun 2015 21:36:07 GMT',
+       etag: '0x8D27CDCEA3036D9',
+       'content-length': '2844044',
+       'content-type': 'audio/x-wav',
+       'content-encoding': '',
+       'content-language': '',
+       'content-md5': 'Djg/3JcFel4YIHN/4cNtlA==',
+       'cache-control': '',
+       'content-disposition': '',
+       blobtype: 'BlockBlob',
+       leasestatus: 'unlocked',
+       leasestate: 'available' } },
+  { name: '2015-06-24_21:42:27:457.mp3',
+    properties: 
+     { 'last-modified': 'Wed, 24 Jun 2015 21:44:24 GMT',
+       etag: '0x8D27CDE12977D9A',
+       'content-length': '2880044',
+       'content-type': 'audio/x-wav',
+       'content-encoding': '',
+       'content-language': '',
+       'content-md5': 'CLrlINMW4srcy1+u/+s88w==',
+       'cache-control': '',
+       'content-disposition': '',
+       blobtype: 'BlockBlob',
+       leasestatus: 'unlocked',
+       leasestate: 'available' } },
+  { name: '2015-06-24_21:42:58:100.mp3',
+    properties: 
+     { 'last-modified': 'Wed, 24 Jun 2015 21:44:54 GMT',
+       etag: '0x8D27CDE24160F31',
+       'content-length': '2880044',
+       'content-type': 'audio/x-wav',
+       'content-encoding': '',
+       'content-language': '',
+       'content-md5': '4k9kYYM8OMsPO9tpXznqUQ==',
+       'cache-control': '',
+       'content-disposition': '',
+       blobtype: 'BlockBlob',
+       leasestatus: 'unlocked',
+       leasestate: 'available' } } ]
+[90mGET /blobs [32m200 [90m561ms - 1.93kb[0m
