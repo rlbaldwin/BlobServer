@@ -16,7 +16,7 @@ export CLIENT=true
 
 export development=true
 
-When you set this variable to 'true', your files will be committed your local Azure blob storage.
+When you set this variable to 'true', your files will be committed to your local Azure blob storage.
 If you remove the variable or set it to 'false', the files will be uploaded to your Azure account's
 blob storage.  Read-up on how to setup your Azure environment.
 
