@@ -13,6 +13,7 @@ does not need these environment variables set.
 Client must have these environment variables set as follows:
 
 export CLIENT=true
+
 export development=true
 
 Optionally, you may want to set DEBUG to generate debug data to the console as follows:
