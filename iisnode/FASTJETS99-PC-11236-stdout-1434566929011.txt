@@ -1,2 +1,0 @@
-clientProc = undefined
-clientProc = false
